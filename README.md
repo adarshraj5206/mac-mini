@@ -131,9 +131,6 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License 📜
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments 🙏
 
@@ -148,7 +145,7 @@ Made with ❤️ by [Adarsh Vardhan](https://github.com/adarshraj5206)
 
 This README includes:
 
-1. **Badges** for demo and license status
+1. **Badges** for demo 
 2. **Features section** highlighting key aspects
 3. **Technologies used** with relevant icons
 4. **Live demo link** prominently displayed
@@ -156,8 +153,7 @@ This README includes:
 6. **Project structure** overview
 7. **Code snippets** showcasing key features
 8. **Contribution guidelines**
-9. **License information**
-10. **Acknowledgments**
+9. **Acknowledgments**
 
 The formatting uses GitHub-flavored Markdown with emojis for better visual organization. You can customize it further by:
 
