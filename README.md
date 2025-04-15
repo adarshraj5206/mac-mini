@@ -143,23 +143,3 @@ Contributions are welcome! Please follow these steps:
 Made with ❤️ by [Adarsh Vardhan](https://github.com/adarshraj5206)
 ```
 
-This README includes:
-
-1. **Badges** for demo 
-2. **Features section** highlighting key aspects
-3. **Technologies used** with relevant icons
-4. **Live demo link** prominently displayed
-5. **Installation instructions** for local setup
-6. **Project structure** overview
-7. **Code snippets** showcasing key features
-8. **Contribution guidelines**
-9. **Acknowledgments**
-
-The formatting uses GitHub-flavored Markdown with emojis for better visual organization. You can customize it further by:
-
-1. Adding a screenshot (replace `screenshot.png`)
-2. Adding more detailed development notes if needed
-3. Including specific browser compatibility information
-4. Adding a "Roadmap" section for future improvements
-
-Would you like me to make any adjustments to this README?
