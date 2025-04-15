@@ -141,5 +141,3 @@ Contributions are welcome! Please follow these steps:
 ---
 
 Made with ❤️ by [Adarsh Vardhan](https://github.com/adarshraj5206)
-```
-
