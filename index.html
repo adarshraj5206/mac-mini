@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mac mini - Apple</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main w-full h-screen">
+    <!-- nav -->
+    <nav class="upper-nav flex flex-wrap justify-between items-center py-2 bg-[#1d1d1f] px-4 md:px-[150px]">
+      <!-- Apple logo - always visible -->
+      <i class="ri-apple-fill text-[20px] text-gray-300 order-1"></i>
+
+      <!-- Navigation links - hidden on mobile, visible on md screens and up -->
+      <div class="hidden md:flex flex-1 justify-center space-x-4 order-3 md:order-2">
+        <a href="#" class="text-gray-300 text-[14px] hover:text-white">Store</a>
+        <a href="#" class="text-gray-300 text-[14px] hover:text-white">Mac</a>
+        <a href="#" class="text-gray-300 text-[14px] hover:text-white">iPad</a>
+        <a href="#" class="text-gray-300 text-[14px] hover:text-white">iPhone</a>
+        <a href="#" class="text-gray-300 text-[14px] hover:text-white">Watch</a>
+        <a href="#" class="text-gray-300 text-[14px] hover:text-white">Vision</a>
+        <a href="#" class="text-gray-300 text-[14px] hover:text-white">AirPods</a>
+        <a href="#" class="text-gray-300 text-[14px] hover:text-white">TV & Home</a>
+        <a href="#" class="text-gray-300 text-[14px] hover:text-white">Entertainment</a>
+        <a href="#" class="text-gray-300 text-[14px] hover:text-white">Accessories</a>
+        <a href="#" class="text-gray-300 text-[14px] hover:text-white">Support</a>
+      </div>
+
+      <!-- Search and cart icons - right aligned -->
+      <div class="flex space-x-4 order-2 md:order-3">
+        <i class="ri-search-line text-[20px] text-gray-300 hover:text-white cursor-pointer"></i>
+        <i class="ri-shopping-bag-line text-[20px] text-gray-300 hover:text-white cursor-pointer"></i>
+        <!-- Mobile menu button - visible only on small screens -->
+        <button class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+          <i class="ri-menu-line text-[20px]"></i>
+        </button>
+      </div>
+
+      <!-- Mobile menu - hidden by default, shown when menu button is clicked -->
+      <div class="hidden w-full order-4 md:hidden mt-2" id="mobile-menu">
+        <div class="flex flex-col space-y-2">
+          <a href="#" class="text-gray-300 text-[14px] hover:text-white py-1">Store</a>
+          <a href="#" class="text-gray-300 text-[14px] hover:text-white py-1">Mac</a>
+          <a href="#" class="text-gray-300 text-[14px] hover:text-white py-1">iPad</a>
+          <a href="#" class="text-gray-300 text-[14px] hover:text-white py-1">iPhone</a>
+          <a href="#" class="text-gray-300 text-[14px] hover:text-white py-1">Watch</a>
+          <a href="#" class="text-gray-300 text-[14px] hover:text-white py-1">Vision</a>
+          <a href="#" class="text-gray-300 text-[14px] hover:text-white py-1">AirPods</a>
+          <a href="#" class="text-gray-300 text-[14px] hover:text-white py-1">TV & Home</a>
+          <a href="#" class="text-gray-300 text-[14px] hover:text-white py-1">Entertainment</a>
+          <a href="#" class="text-gray-300 text-[14px] hover:text-white py-1">Accessories</a>
+          <a href="#" class="text-gray-300 text-[14px] hover:text-white py-1">Support</a>
+        </div>
+      </div>
+    </nav>
+
+    <nav
+      class="lower-nav flex flex-col md:flex-row justify-between items-center bg-[#1d1d1f] py-2 px-4 md:px-[150px] sticky top-0">
+      <h2 class="text-[25px] font-bold text-white mb-2 md:mb-0">Mac mini</h2>
+      <div class="right flex flex-wrap justify-center items-center gap-2 md:gap-4">
+        <a href="#" class="text-gray-300 text-[14px] hover:text-white">Overview</a>
+        <a href="#" class="text-white text-[14px] hover:text-gray-300">Tech Specs<i
+            class="ri-arrow-down-s-line"></i></a>
+        <a href="#" class="text-white text-[14px] hover:text-gray-300">Compare</a>
+        <a href="#" class="text-white text-[14px] hover:text-gray-300">Switch from PC to Mac</a>
+        <a href="#"
+          class="bg-[#0071e3] px-3 py-1 rounded-full text-white hover:bg-[#0071e3]/80 whitespace-nowrap">Buy</a>
+      </div>
+    </nav>
+
+    <hr class="text-gray-400" />
+
+    <!-- hero section -->
+    <div class="hero-section">
+      <!-- Top promo text -->
+      <p class="text-white text-sm md:text-[15px] px-4 md:px-[150px] text-center py-4 bg-[#1d1d1f]">
+        Buy Mac mini starting at $499 with education savings.*
+        <a href="#" class="text-blue-700">Shop<i class="ri-arrow-drop-right-line"></i></a>
+      </p>
+
+      <!-- Hero image with overlay text -->
+      <div class="img-container relative w-full">
+        <img src="./images/hero_1__gva2lbdgzpua_medium_2x.jpg" alt="Mac mini" class="w-full" />
+
+        <!-- Product name -->
+        <h2
+          class="text-white text-2xl md:text-[35px] font-bold absolute bottom-[15%] md:bottom-[12%] left-1/2 -translate-x-1/2 whitespace-nowrap z-10">
+          Mac mini
+        </h2>
+
+        <!-- Main headline - fixed alignment -->
+        <div class="absolute bottom-[-16%] left-1/2 -translate-x-1/2 w-full text-center z-10">
+          <div class="inline-block text-center">
+            <h1 class="hero-text-line text-4xl sm:text-5xl md:text-[90px] font-bold leading-[1] text-transparent bg-clip-text bg-gradient-to-b from-[#eff1ff] to-[#6c6c6c]">
+              More muscle.
+            </h1>
+            <h1 class="hero-text-line delay-200 text-4xl sm:text-5xl md:text-[90px] font-bold leading-[0.9] text-transparent bg-clip-text bg-gradient-to-b from-[#eff1ff] to-[#6c6c6c]">
+              More hustle.
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Description text -->
+      <p
+        class="text-gray-500 leading-[1.2] text-lg md:text-[32px] px-4 md:px-[200px] font-[600] text-center py-4 bg-black pt-16 md:pt-[130px] font-[SFProRegular]">
+        Mac mini with M2 packs the speed you need to get more done faster. And M2 Pro takes it to a whole new level —
+        bringing a pro chip to Mac mini for the first time. Add to that a versatile array of ports and you've got a
+        desktop ready to flex in any setup, no matter which chip you choose.
+      </p>
+
+      <!-- Price -->
+      <h2 class="text-white text-xl md:text-[25px] font-bold text-center py-4 bg-black">From $599</h2>
+
+      <!-- Watch link -->
+      <p class="px-4 text-center py-4 bg-black pb-10 md:pb-[40px]">
+        <a href="#" class="text-blue-600 text-base md:text-[22px] hover:underline">
+          Watch the announcement <i class="ri-play-circle-line"></i>
+        </a>
+      </p>
+    </div>
+
+    <!-- Mid Section -->
+    <section class="performance-section relative w-full overflow-hidden">
+      <div class="gradient-section w-full bg-gradient-to-r from-[#2A0332] to-[#111E4C] py-16 md:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Heading -->
+          <h1 class="relative z-10 text-white text-4xl md:text-6xl lg:text-[80px] font-bold text-center mb-12 md:mb-16">
+            Supercharged by
+          </h1>
+
+          <!-- Chips Comparison -->
+          <div class="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16 xl:gap-24">
+            <!-- M2 Chip -->
+            <div class="chip-card relative w-full max-w-md lg:max-w-lg">
+              <img class="w-full h-auto" src="./images/m2__ervje1p52cya_large_2x.png" alt="Apple M2 Chip"
+                loading="lazy">
+              <p class="chip-specs bg-gradient-to-r from-[#F0A72F] to-[#EC6C33] via-[#E34534] via-[#CD18C2]">
+                8‑core CPU<br>
+                10‑core GPU<br>
+                Up to 24GB unified memory<br>
+                100GB/s memory bandwidth
+              </p>
+            </div>
+
+            <!-- M2 Pro Chip -->
+            <div class="chip-card relative w-full max-w-md lg:max-w-lg mt-12 lg:mt-0">
+              <img class="w-full h-auto" src="./images/m2_pro__bod7oesbsble_large_2x.png" alt="Apple M2 Pro Chip"
+                loading="lazy">
+              <p class="chip-specs bg-gradient-to-r from-[#91D1F1] via-[#25A5E6] to-[#252FFF]">
+                Up to 12‑core CPU<br>
+                Up to 19‑core GPU<br>
+                Up to 32GB unified memory<br>
+                200GB/s memory bandwidth
+              </p>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <p
+            class="text-gray-400 text-lg md:text-xl lg:text-2xl leading-relaxed font-medium text-center mt-20 md:mt-28 lg:mt-36 max-w-4xl mx-auto">
+            The next generation of Apple silicon makes this the hardest‑working Mac mini we've ever built. From rich
+            presentations to immersive gaming, M2 flies through work and play. And M2 Pro crushes compute‑intensive
+            tasks like editing massive images and 8K ProRes video.
+          </p>
+
+          <!-- CTA Button -->
+          <div class="relative z-10 flex justify-center mt-12 md:mt-16">
+            <button class="hover-fix
+          border-2 border-white 
+          text-white 
+          hover:text-black 
+          hover:bg-green-600 
+          text-lg 
+          font-semibold 
+          px-6 py-2 
+          rounded-full 
+          transition-all 
+          duration-300
+          ease-in-out
+          transform
+          hover:scale-105
+          focus:outline-none 
+        ">
+              Go inside M2 and M2 Pro <i class="ri-add-circle-line ml-2"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Performance Comparison Section -->
+    <section id="performance" class="performance-section py-12 md:py-16 bg-black">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <!-- Section Heading -->
+        <header class="text-center mb-8 lg:mb-12">
+          <h2 class="text-white text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
+            Unmatched Performance
+          </h2>
+        </header>
+
+        <!-- Performance Hero Image with Stats -->
+        <div class="relative rounded-xl overflow-hidden mb-8 lg:mb-12 aspect-video max-w-6xl mx-auto">
+          <!-- Responsive image with different resolutions -->
+          <img src="./images/Mac mini performance.webp" alt="Mac mini performance" class="w-full h-full object-cover">
+
+          <!-- Gradient overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+
+          <!-- Performance stats overlay - Changed for mobile -->
+          <div class="absolute bottom-0 left-0 w-full p-3 sm:p-6 lg:p-8">
+            <div class="flex flex-row justify-center gap-2 sm:grid sm:grid-cols-3 sm:gap-4 max-w-2xl mx-auto">
+              <!-- Stat 1 -->
+              <div class="stat-card bg-gray-900/80 backdrop-blur-sm p-2 sm:p-4 rounded-lg text-center border border-gray-800">
+                <p class="text-blue-500 text-lg sm:text-2xl lg:text-3xl font-bold mb-1">
+                  <span class="stat-number">12</span><span class="stat-number delay-100">×</span>
+                </p>
+                <p class="text-white text-xs sm:text-sm md:text-base opacity-90">Faster than previous gen</p>
+              </div>
+
+              <!-- Stat 2 -->
+              <div class="stat-card bg-gray-900/80 backdrop-blur-sm p-2 sm:p-4 rounded-lg text-center border border-gray-800">
+                <p class="text-blue-500 text-lg sm:text-2xl lg:text-3xl font-bold mb-1">
+                  <span class="stat-number delay-200">8</span><span class="stat-number delay-300">K</span>
+                </p>
+                <p class="text-white text-xs sm:text-sm md:text-base opacity-90">ProRes video</p>
+              </div>
+
+              <!-- Stat 3 -->
+              <div class="stat-card bg-gray-900/80 backdrop-blur-sm p-2 sm:p-4 rounded-lg text-center border border-gray-800">
+                <p class="text-blue-500 text-lg sm:text-2xl lg:text-3xl font-bold mb-1">
+                  <span class="stat-number delay-400">5</span><span class="stat-number delay-500">×</span>
+                </p>
+                <p class="text-white text-xs sm:text-sm md:text-base opacity-90">Faster ML</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comparison Table -->
+        <div class="overflow-hidden rounded-xl border border-gray-800 bg-gray-900/50">
+          <div class="overflow-x-auto">
+            <table class="w-full min-w-[600px]">
+              <thead>
+                <tr class="border-b border-gray-800">
+                  <th class="text-left py-3 sm:py-4 pl-4 sm:pl-6 pr-2 sm:pr-4 text-gray-300 font-medium text-sm sm:text-base">Model</th>
+                  <th class="text-center py-3 sm:py-4 px-2 sm:px-4 text-gray-300 font-medium text-sm sm:text-base">CPU</th>
+                  <th class="text-center py-3 sm:py-4 px-2 sm:px-4 text-gray-300 font-medium text-sm sm:text-base">GPU</th>
+                  <th class="text-center py-3 sm:py-4 px-2 sm:px-4 text-gray-300 font-medium text-sm sm:text-base">Memory</th>
+                  <th class="text-center py-3 sm:py-4 px-2 sm:px-4 text-gray-300 font-medium text-sm sm:text-base">Storage</th>
+                  <th class="text-center py-3 sm:py-4 pr-4 sm:pr-6 pl-2 sm:pl-4 text-gray-300 font-medium text-sm sm:text-base">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- M2 Base Model -->
+                <tr
+                  class="border-b border-gray-800 hover:bg-gray-800/30 transition-colors duration-200 cursor-pointer mac-model"
+                  data-model="m2-base" aria-expanded="false" aria-controls="m2-base-details">
+                  <td class="text-left py-4 sm:py-5 pl-4 sm:pl-6 pr-2 sm:pr-4 font-semibold text-white text-sm sm:text-base">Mac mini M2</td>
+                  <td class="text-center py-4 sm:py-5 px-2 sm:px-4 text-gray-300 text-sm sm:text-base">8-core</td>
+                  <td class="text-center py-4 sm:py-5 px-2 sm:px-4 text-gray-300 text-sm sm:text-base">10-core</td>
+                  <td class="text-center py-4 sm:py-5 px-2 sm:px-4 text-gray-300 text-sm sm:text-base">8GB-24GB</td>
+                  <td class="text-center py-4 sm:py-5 px-2 sm:px-4 text-gray-300 text-sm sm:text-base">256GB-2TB</td>
+                  <td class="text-center py-4 sm:py-5 pr-4 sm:pr-6 pl-2 sm:pl-4 text-white text-sm sm:text-base">From $599</td>
+                </tr>
+
+                <!-- M2 Pro Model -->
+                <tr
+                  class="border-b border-gray-800 hover:bg-gray-800/30 transition-colors duration-200 cursor-pointer mac-model"
+                  data-model="m2-pro" aria-expanded="false" aria-controls="m2-pro-details">
+                  <td class="text-left py-4 sm:py-5 pl-4 sm:pl-6 pr-2 sm:pr-4 font-semibold text-white text-sm sm:text-base">Mac mini M2 Pro</td>
+                  <td class="text-center py-4 sm:py-5 px-2 sm:px-4 text-gray-300 text-sm sm:text-base">12-core</td>
+                  <td class="text-center py-4 sm:py-5 px-2 sm:px-4 text-gray-300 text-sm sm:text-base">19-core</td>
+                  <td class="text-center py-4 sm:py-5 px-2 sm:px-4 text-gray-300 text-sm sm:text-base">16GB-32GB</td>
+                  <td class="text-center py-4 sm:py-5 px-2 sm:px-4 text-gray-300 text-sm sm:text-base">512GB-8TB</td>
+                  <td class="text-center py-4 sm:py-5 pr-4 sm:pr-6 pl-2 sm:pl-4 text-white text-sm sm:text-base">From $1,299</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Model Details Panel -->
+        <div id="model-details" class="mt-6 p-4 sm:p-6 lg:p-8 bg-gray-900/70 rounded-xl border border-gray-800 hidden"
+          role="region" aria-live="polite">
+          <div class="max-w-4xl mx-auto">
+            <h3 id="model-title" class="text-white text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3">Mac mini with M2</h3>
+            <p id="model-description" class="text-gray-300 text-sm sm:text-base mb-4 sm:mb-6">
+              The M2 chip begins the next generation of Apple silicon, with enhanced performance and capabilities.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+              <!-- Feature 1 -->
+              <div class="feature-card p-3 sm:p-4 bg-gray-800/30 rounded-lg border border-gray-800">
+                <h4 class="text-blue-500 font-semibold mb-1 sm:mb-2 text-base sm:text-lg">Performance</h4>
+                <p class="text-gray-300 text-xs sm:text-sm leading-relaxed">
+                  Up to 12× faster than previous Mac mini models for complex workflows and professional applications.
+                </p>
+              </div>
+
+              <!-- Feature 2 -->
+              <div class="feature-card p-3 sm:p-4 bg-gray-800/30 rounded-lg border border-gray-800">
+                <h4 class="text-blue-500 font-semibold mb-1 sm:mb-2 text-base sm:text-lg">Connectivity</h4>
+                <p class="text-gray-300 text-xs sm:text-sm leading-relaxed">
+                  Thunderbolt 4 ports, HDMI 2.1, USB-A, Gigabit Ethernet, and Wi-Fi 6E for versatile connectivity.
+                </p>
+              </div>
+
+              <!-- Feature 3 -->
+              <div class="feature-card p-3 sm:p-4 bg-gray-800/30 rounded-lg border border-gray-800">
+                <h4 class="text-blue-500 font-semibold mb-1 sm:mb-2 text-base sm:text-lg">Power Efficiency</h4>
+                <p class="text-gray-300 text-xs sm:text-sm leading-relaxed">
+                  Industry-leading performance per watt enables sustained performance while remaining energy efficient.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-6 sm:mt-8 text-center">
+              <button
+                class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 transition-colors duration-200 text-white font-medium px-6 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base"
+                aria-label="Learn more about this Mac mini model">
+                Learn More
+                <svg class="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW SECTION: Connectivity & Setup -->
+    <div id="connectivity" class="connectivity-section py-16 md:py-24 bg-gradient-to-b from-black to-[#141414]">
+      <div class="container mx-auto px-4 md:px-8 lg:px-16">
+        <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8">Connectivity & Setup</h2>
+        <p class="text-gray-300 text-center text-base md:text-lg lg:text-xl mb-16">Connect and create with a versatile array of ports for all your devices and accessories.</p>
+        
+        <div class="ports-section mb-20">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="ports-image relative">
+              <img src="./images/Mac mini ports.webp" alt="Mac mini ports" class="w-full rounded-lg">
+              <div class="port-indicators absolute top-0 left-0 w-full h-full">
+                <!-- Port indicators will be added via JS -->
+              </div>
+            </div>
+            <div class="ports-description">
+              <h3 class="text-white text-2xl font-bold mb-6">Ports for Everything</h3>
+              <div class="port-list space-y-4">
+                <div class="port-item flex items-start">
+                  <div class="port-icon flex-shrink-0 mr-4 w-8 h-8 bg-[#0071e3] rounded-full flex items-center justify-center">
+                    <i class="ri-usb-fill text-white"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-white font-semibold">Thunderbolt 4</h4>
+                    <p class="text-gray-300 text-sm">Connect high-speed external storage, displays, and more</p>
+                  </div>
+                </div>
+                <div class="port-item flex items-start">
+                  <div class="port-icon flex-shrink-0 mr-4 w-8 h-8 bg-[#0071e3] rounded-full flex items-center justify-center">
+                    <i class="ri-tv-fill text-white"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-white font-semibold">HDMI</h4>
+                    <p class="text-gray-300 text-sm">Connect displays and TVs with up to 4K resolution</p>
+                  </div>
+                </div>
+                <div class="port-item flex items-start">
+                  <div class="port-icon flex-shrink-0 mr-4 w-8 h-8 bg-[#0071e3] rounded-full flex items-center justify-center">
+                    <i class="ri-wifi-fill text-white"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-white font-semibold">Wi-Fi 6E & Bluetooth 5.3</h4>
+                    <p class="text-gray-300 text-sm">Fast wireless connectivity for all your devices</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="setup-gallery">
+          <h3 class="text-white text-2xl font-bold text-center mb-8">Perfect for Any Setup</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="setup-item relative overflow-hidden rounded-lg group">
+              <img src="./images/Home Office Setup.webp" alt="Home Office Setup" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+              <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent">
+                <h4 class="text-white font-semibold">Home Office</h4>
+                <p class="text-gray-300 text-sm">Powerful yet compact for your workspace</p>
+              </div>
+            </div>
+            <div class="setup-item relative overflow-hidden rounded-lg group">
+              <img src="./images/creative studio setup.webp" alt="Creative Studio" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+              <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent">
+                <h4 class="text-white font-semibold">Creative Studio</h4>
+                <p class="text-gray-300 text-sm">Perfect for designers and content creators</p>
+              </div>
+            </div>
+            <div class="setup-item relative overflow-hidden rounded-lg group">
+              <img src="./images/server room of mac mini.webp" alt="Server Room" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+              <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent">
+                <h4 class="text-white font-semibold">Server Room</h4>
+                <p class="text-gray-300 text-sm">Ideal for server and development environments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#1d1d1f] py-12">
+      <div class="container mx-auto px-4 md:px-8 lg:px-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div>
+            <h3 class="text-white text-lg font-bold mb-4">Shop and Learn</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-400 hover:text-white text-sm">Mac</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white text-sm">iPad</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white text-sm">iPhone</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white text-sm">Watch</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white text-lg font-bold mb-4">Services</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-400 hover:text-white text-sm">Apple Music</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white text-sm">Apple TV+</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white text-sm">iCloud</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white text-sm">Apple Care</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white text-lg font-bold mb-4">Apple Store</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-400 hover:text-white text-sm">Find a Store</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white text-sm">Genius Bar</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white text-sm">Today at Apple</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white text-sm">Apple Camp</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="mac-info border-t border-gray-700 pt-8 mb-8">
+          <p class="text-gray-400 text-center text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
+            The Mac mini represents Apple's commitment to powerful computing in a compact form factor. Since its introduction in 2005, Mac mini has evolved to become a versatile desktop solution for professionals, creators, and everyday users alike. With its latest M2 and M2 Pro chips, Mac mini delivers unprecedented performance while maintaining its signature small footprint and energy efficiency, making it the perfect centerpiece for any setup.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <p class="text-gray-500 text-sm">&copy; 2025 Apple Inc. All rights reserved.</p>
+          <p class="text-gray-400 text-sm mt-4">Made with <i class="ri-heart-fill text-red-500"></i> by Adarsh Vardhan</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-[#0071e3] text-white w-10 h-10 rounded-full flex items-center justify-center opacity-0 invisible transition-all duration-300">
+      <i class="ri-arrow-up-line"></i>
+    </button>
+
+   <script src="script.js"></script>
+</body>
+</html>
